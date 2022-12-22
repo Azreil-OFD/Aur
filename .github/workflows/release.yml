@@ -34,4 +34,4 @@ jobs:
           modpack-path: './curse_upload/Aur-${{ steps.get_release.outputs.tag_name }}.zip'
           game-version: '1.16.5'
           display-name: 'Aur. ${{ steps.get_release.outputs.tag_name }}'
-          release-type: ${{ steps.get_curseforge_release_type.outputs.release_type }}
+          release-type: "beta"
