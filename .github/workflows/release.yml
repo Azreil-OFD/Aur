@@ -32,6 +32,8 @@ jobs:
           api-token: ${{ secrets.API_TOKEN }}
           project-id: '766928'
           modpack-path: './curse_upload/Aur-${{ steps.get_release.outputs.tag_name }}.zip'
-          game-version: '1.16.5'
+          game-version: '1.12.2'
           display-name: 'Aur. ${{ steps.get_release.outputs.tag_name }}'
           release-type: "beta"
+      - name: prof
+        uses: softprops/action-gh-release@v1
